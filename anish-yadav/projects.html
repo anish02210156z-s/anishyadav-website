@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects &amp; Portfolio | Anish Yadav - AI, Web, &amp; Software Engineering</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore open-source projects, artificial intelligence systems, web applications, and programming tools engineered by Anish Yadav." />
+  <meta name="keywords" content="Anish Yadav Projects, Portfolio, GitHub Repos, AI Systems, Full Stack Web Apps" />
+  <meta name="author" content="Anish Yadav" />
+  <link rel="canonical" href="https://anishyadav.com.np/projects.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anishyadav.com.np/projects.html" />
+  <meta property="og:title" content="Projects Portfolio | Anish Yadav" />
+  <meta property="og:description" content="A collection of web development, artificial intelligence, and software engineering projects by Anish Yadav." />
+  <meta property="og:image" content="https://anishyadav.com.np/images/technology.svg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects Portfolio | Anish Yadav" />
+  <meta name="twitter:description" content="Check out AI and software engineering projects by Anish Yadav." />
+  <meta name="twitter:image" content="https://anishyadav.com.np/images/technology.svg" />
+
+  <!-- Favicon & Manifest -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner"></div>
+    <div style="font-family: var(--font-heading); font-weight: 700; color: var(--text-main); font-size: 1.2rem; letter-spacing: 1px;">ANISH YADAV</div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="Anish Yadav Logo" />
+        <span>ANISH YADAV</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="section" style="padding-top: 9rem; padding-bottom: 3rem; background: var(--bg-glass);">
+    <div class="container text-center">
+      <span class="section-tag">Software &amp; Innovation</span>
+      <h1 class="section-title">Project <span class="gradient-text">Portfolio</span></h1>
+      <p class="section-subtitle">Explore a curated showcase of web apps, artificial intelligence models, educational platforms, and software repositories.</p>
+    </div>
+  </section>
+
+  <!-- Filter Bar & Projects Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ai">AI Projects</button>
+        <button class="filter-btn" data-filter="web">Website Projects</button>
+        <button class="filter-btn" data-filter="programming">Programming Tools</button>
+        <button class="filter-btn" data-filter="edu">Educational</button>
+      </div>
+
+      <div class="project-grid">
+        <!-- Project 1: AI Assistant -->
+        <div class="glass-card project-card" data-category="ai">
+          <div class="project-thumbnail">
+            <img src="images/ai.svg" alt="NeuroPulse AI Project" />
+            <div class="project-overlay">
+              <a href="https://github.com" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fab fa-github"></i> Code</a>
+              <button class="btn btn-primary view-project-btn" data-img="images/ai.svg" data-title="NeuroPulse Generative AI Assistant" style="padding: 0.5rem 1rem;"><i class="fas fa-eye"></i> Demo</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">AI / ML</span>
+              <span class="tag">Python</span>
+              <span class="tag">LLM API</span>
+            </div>
+            <h3>NeuroPulse AI Suite</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">An intelligent conversational AI assistant with multi-modal vision and natural language processing capabilities.</p>
+          </div>
+        </div>
+
+        <!-- Project 2: Full Stack Edu Platform -->
+        <div class="glass-card project-card" data-category="edu">
+          <div class="project-thumbnail">
+            <img src="images/education.svg" alt="Learning Platform Project" />
+            <div class="project-overlay">
+              <a href="https://github.com" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fab fa-github"></i> Code</a>
+              <button class="btn btn-primary view-project-btn" data-img="images/education.svg" data-title="LearnHub Online Notes Platform" style="padding: 0.5rem 1rem;"><i class="fas fa-eye"></i> Demo</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Education</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+            </div>
+            <h3>LearnHub Online Notes</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">An open-source interactive learning platform featuring structured computer science notes and quiz challenges.</p>
+          </div>
+        </div>
+
+        <!-- Project 3: Modern Portfolio Web -->
+        <div class="glass-card project-card" data-category="web">
+          <div class="project-thumbnail">
+            <img src="images/technology.svg" alt="Personal Website Project" />
+            <div class="project-overlay">
+              <a href="https://github.com" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fab fa-github"></i> Code</a>
+              <button class="btn btn-primary view-project-btn" data-img="images/technology.svg" data-title="Anish Yadav Brand Web" style="padding: 0.5rem 1rem;"><i class="fas fa-eye"></i> Demo</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Vanilla JS</span>
+            </div>
+            <h3>Anish Yadav Brand Web</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Ultra-fast glassmorphism personal brand website with dark/light themes and responsive design.</p>
+          </div>
+        </div>
+
+        <!-- Project 4: Developer CLI Utility -->
+        <div class="glass-card project-card" data-category="programming">
+          <div class="project-thumbnail">
+            <img src="images/technology.svg" alt="Code Optimizer CLI" />
+            <div class="project-overlay">
+              <a href="https://github.com" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fab fa-github"></i> Code</a>
+              <button class="btn btn-primary view-project-btn" data-img="images/technology.svg" data-title="CodeForge CLI" style="padding: 0.5rem 1rem;"><i class="fas fa-eye"></i> Demo</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">CLI</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Tooling</span>
+            </div>
+            <h3>CodeForge Developer Toolkit</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Command-line interface tool for automated code formatting, linting, and project scaffolding.</p>
+          </div>
+        </div>
+
+        <!-- Project 5: Smart Analytics Dashboard -->
+        <div class="glass-card project-card" data-category="web">
+          <div class="project-thumbnail">
+            <img src="images/blog.svg" alt="Analytics Dashboard" />
+            <div class="project-overlay">
+              <a href="https://github.com" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fab fa-github"></i> Code</a>
+              <button class="btn btn-primary view-project-btn" data-img="images/blog.svg" data-title="VisionMetrics Dashboard" style="padding: 0.5rem 1rem;"><i class="fas fa-eye"></i> Demo</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Dashboard</span>
+              <span class="tag">Charts</span>
+              <span class="tag">CSS Grid</span>
+            </div>
+            <h3>VisionMetrics Realtime Dashboard</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">A sleek analytics platform rendering real-time website statistics, traffic charts, and user engagement metrics.</p>
+          </div>
+        </div>
+
+        <!-- Project 6: AI Vision Classifier -->
+        <div class="glass-card project-card" data-category="ai">
+          <div class="project-thumbnail">
+            <img src="images/ai.svg" alt="AI Vision Classifier" />
+            <div class="project-overlay">
+              <a href="https://github.com" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fab fa-github"></i> Code</a>
+              <button class="btn btn-primary view-project-btn" data-img="images/ai.svg" data-title="DeepScan Vision Classifier" style="padding: 0.5rem 1rem;"><i class="fas fa-eye"></i> Demo</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">TensorFlow</span>
+            </div>
+            <h3>DeepScan Vision Classifier</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Convolutional Neural Network model for real-time image recognition and object classification.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close">&times;</button>
+      <img src="" id="lightbox-img" alt="Project Lightbox" style="width: 100%; height: auto; max-height: 500px; object-fit: contain;" />
+      <div style="padding: 1.5rem;">
+        <h3 id="lightbox-title" style="margin-bottom: 0.5rem;"></h3>
+        <p style="color: var(--text-muted);">Previewing high-resolution project asset and architecture schematic.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Anish Yadav Logo" />
+            <span>ANISH YADAV</span>
+          </a>
+          <p>Empowering minds through technology, artificial intelligence, software engineering, and creative media.</p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Biography</a></li>
+            <li><a href="projects.html">Portfolio &amp; Repos</a></li>
+            <li><a href="blog.html">Articles &amp; Blog</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Domains</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html">Education &amp; Tutorials</a></li>
+            <li><a href="projects.html">Artificial Intelligence</a></li>
+            <li><a href="projects.html">Full Stack Engineering</a></li>
+            <li><a href="blog.html">Entertainment &amp; Media</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-envelope"></i> anish02210156z@gmail.com</li>
+            <li><i class="fas fa-globe"></i> anishyadav.com.np</li>
+            <li><i class="fas fa-map-marker-alt"></i> Nepal</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Anish Yadav. All rights reserved.</div>
+        <div>Designed &amp; Built with Pure HTML, CSS, and Vanilla JavaScript.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-container">
+      <div class="search-input-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="search-input" placeholder="Search projects, articles, or topics..." />
+        <button id="search-close" style="background: none; border: none; color: var(--text-main); font-size: 1.2rem; cursor: pointer;"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="search-results" id="search-results">
+        <p style="color: var(--text-muted); text-align: center;">Type to search across projects, articles, and pages...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back To Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

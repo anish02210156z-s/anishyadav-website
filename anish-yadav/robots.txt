@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anishyadav.com.np/sitemap.xml

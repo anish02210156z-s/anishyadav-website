@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog &amp; Knowledge Hub | Anish Yadav - Tech, AI &amp; Education</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Read articles, technical guides, AI research breakdowns, and computer science tutorials authored by Anish Yadav." />
+  <meta name="keywords" content="Anish Yadav Blog, Tech Articles, AI Research, Programming Tutorials, Educational Notes" />
+  <meta name="author" content="Anish Yadav" />
+  <link rel="canonical" href="https://anishyadav.com.np/blog.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="blog" />
+  <meta property="og:url" content="https://anishyadav.com.np/blog.html" />
+  <meta property="og:title" content="Blog &amp; Tech Articles | Anish Yadav" />
+  <meta property="og:description" content="In-depth technical guides, AI breakthroughs, software development insights, and tutorials." />
+  <meta property="og:image" content="https://anishyadav.com.np/images/blog.svg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog &amp; Tech Hub | Anish Yadav" />
+  <meta name="twitter:description" content="Technical articles and AI educational insights by Anish Yadav." />
+  <meta name="twitter:image" content="https://anishyadav.com.np/images/blog.svg" />
+
+  <!-- Favicon & Manifest -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner"></div>
+    <div style="font-family: var(--font-heading); font-weight: 700; color: var(--text-main); font-size: 1.2rem; letter-spacing: 1px;">ANISH YADAV</div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="Anish Yadav Logo" />
+        <span>ANISH YADAV</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="blog.html" class="nav-link active">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="section" style="padding-top: 9rem; padding-bottom: 3rem; background: var(--bg-glass);">
+    <div class="container text-center">
+      <span class="section-tag">Articles &amp; Research</span>
+      <h1 class="section-title">The Anish Yadav <span class="gradient-text">Blog</span></h1>
+      <p class="section-subtitle">In-depth perspectives on artificial intelligence, modern web development, computer science education, and digital media trends.</p>
+    </div>
+  </section>
+
+  <!-- Featured Post Big Card -->
+  <section class="section">
+    <div class="container">
+      <div class="featured-article">
+        <div class="featured-img">
+          <img src="images/blog.svg" alt="Featured Article" />
+        </div>
+        <div class="featured-info">
+          <span class="blog-badge">Featured Post</span>
+          <div class="blog-meta">
+            <span><i class="far fa-calendar-alt"></i> July 28, 2026</span>
+            <span><i class="far fa-clock"></i> 10 min read</span>
+          </div>
+          <h2 style="font-size: 1.8rem;">Building Autonomous AI Agents with Pure TypeScript and Serverless Infrastructure</h2>
+          <p style="color: var(--text-muted);">A comprehensive architectural guide to designing multi-agent workflows, managing LLM memory contexts, and deploying scalable reactive pipelines on modern serverless containers.</p>
+          <div>
+            <button onclick="showToast('Loading full article content...', 'success')" class="btn btn-primary"><i class="fas fa-book-open"></i> Read Full Story</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Category Tabs -->
+      <div class="filter-bar" style="margin-top: 3rem;">
+        <button class="filter-btn active" data-filter="all">All Articles</button>
+        <button class="filter-btn" data-filter="ai">Artificial Intelligence</button>
+        <button class="filter-btn" data-filter="programming">Programming</button>
+        <button class="filter-btn" data-filter="edu">Education</button>
+        <button class="filter-btn" data-filter="tech">Technology</button>
+        <button class="filter-btn" data-filter="entertainment">Entertainment</button>
+      </div>
+
+      <!-- Articles Grid + Sidebar -->
+      <div style="display: grid; grid-template-columns: 2.2fr 0.8fr; gap: 2.5rem; align-items: start;">
+        
+        <!-- Main Articles Grid -->
+        <div class="blog-grid">
+          
+          <!-- Article 1 -->
+          <div class="glass-card blog-card" data-category="ai">
+            <div class="blog-img">
+              <img src="images/ai.svg" alt="AI Article" />
+              <span class="blog-badge">Artificial Intelligence</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar-alt"></i> July 20, 2026</span>
+                <span><i class="far fa-clock"></i> 6 min</span>
+              </div>
+              <h3 class="blog-title">The Evolution of LLMs: From Text Processing to Multimodal Reasoning</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">Understanding how modern transformer models process vision, audio, and code context concurrently.</p>
+              <button onclick="showToast('Opening article details...', 'success')" class="card-link" style="background: none; border: none; cursor: pointer; padding: 0;">Read More <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="glass-card blog-card" data-category="programming">
+            <div class="blog-img">
+              <img src="images/technology.svg" alt="Programming Article" />
+              <span class="blog-badge">Programming</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar-alt"></i> July 15, 2026</span>
+                <span><i class="far fa-clock"></i> 8 min</span>
+              </div>
+              <h3 class="blog-title">10 Clean Code Principles Every Senior Full Stack Engineer Should Follow</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">How to write maintainable, modular, and self-documenting code in high-scale web applications.</p>
+              <button onclick="showToast('Opening article details...', 'success')" class="card-link" style="background: none; border: none; cursor: pointer; padding: 0;">Read More <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="glass-card blog-card" data-category="edu">
+            <div class="blog-img">
+              <img src="images/education.svg" alt="Education Article" />
+              <span class="blog-badge">Education</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar-alt"></i> July 08, 2026</span>
+                <span><i class="far fa-clock"></i> 5 min</span>
+              </div>
+              <h3 class="blog-title">A Roadmap to Master Computer Science Fundamentals in 2026</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">Step-by-step curriculum covering data structures, algorithms, operating systems, and networking.</p>
+              <button onclick="showToast('Opening article details...', 'success')" class="card-link" style="background: none; border: none; cursor: pointer; padding: 0;">Read More <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- Article 4 -->
+          <div class="glass-card blog-card" data-category="tech">
+            <div class="blog-img">
+              <img src="images/technology.svg" alt="Tech Article" />
+              <span class="blog-badge">Technology</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar-alt"></i> June 28, 2026</span>
+                <span><i class="far fa-clock"></i> 7 min</span>
+              </div>
+              <h3 class="blog-title">Why Glassmorphism &amp; Micro-Interactions Define Modern Web UI Design</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">Exploring luxury design aesthetics, CSS backdrop filters, and subtle hover interaction loops.</p>
+              <button onclick="showToast('Opening article details...', 'success')" class="card-link" style="background: none; border: none; cursor: pointer; padding: 0;">Read More <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- Article 5 -->
+          <div class="glass-card blog-card" data-category="entertainment">
+            <div class="blog-img">
+              <img src="images/entertainment.svg" alt="Entertainment Article" />
+              <span class="blog-badge">Entertainment</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar-alt"></i> June 18, 2026</span>
+                <span><i class="far fa-clock"></i> 4 min</span>
+              </div>
+              <h3 class="blog-title">The Convergence of Tech Podcasts, Live Code Streaming, and Digital Storytelling</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">How creators utilize interactive media formats to build active, engaged global tech communities.</p>
+              <button onclick="showToast('Opening article details...', 'success')" class="card-link" style="background: none; border: none; cursor: pointer; padding: 0;">Read More <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside>
+          <!-- Search Box Widget -->
+          <div class="glass-card" style="margin-bottom: 2rem;">
+            <h4 style="margin-bottom: 1rem;">Search Blog</h4>
+            <div style="display: flex; gap: 8px;">
+              <input type="text" class="form-input" placeholder="Search keywords..." style="padding: 0.6rem 1rem;" />
+              <button class="btn btn-primary" style="padding: 0.6rem 1rem;"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="glass-card" style="margin-bottom: 2rem;">
+            <h4 style="margin-bottom: 1rem;">Categories</h4>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.95rem;">
+              <li style="display: flex; justify-content: space-between;"><a href="#" style="color: var(--text-main);">Artificial Intelligence</a> <span style="color: var(--text-muted);">(12)</span></li>
+              <li style="display: flex; justify-content: space-between;"><a href="#" style="color: var(--text-main);">Programming</a> <span style="color: var(--text-muted);">(18)</span></li>
+              <li style="display: flex; justify-content: space-between;"><a href="#" style="color: var(--text-main);">Education &amp; Notes</a> <span style="color: var(--text-muted);">(15)</span></li>
+              <li style="display: flex; justify-content: space-between;"><a href="#" style="color: var(--text-main);">Technology Trends</a> <span style="color: var(--text-muted);">(10)</span></li>
+              <li style="display: flex; justify-content: space-between;"><a href="#" style="color: var(--text-main);">Entertainment &amp; Media</a> <span style="color: var(--text-muted);">(8)</span></li>
+            </ul>
+          </div>
+
+          <!-- Tag Cloud Widget -->
+          <div class="glass-card">
+            <h4 style="margin-bottom: 1rem;">Popular Tags</h4>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span class="tag">#AI</span>
+              <span class="tag">#WebDev</span>
+              <span class="tag">#Python</span>
+              <span class="tag">#JavaScript</span>
+              <span class="tag">#Glassmorphism</span>
+              <span class="tag">#Education</span>
+              <span class="tag">#ComputerScience</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Anish Yadav Logo" />
+            <span>ANISH YADAV</span>
+          </a>
+          <p>Empowering minds through technology, artificial intelligence, software engineering, and creative media.</p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Biography</a></li>
+            <li><a href="projects.html">Portfolio &amp; Repos</a></li>
+            <li><a href="blog.html">Articles &amp; Blog</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Domains</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html">Education &amp; Tutorials</a></li>
+            <li><a href="projects.html">Artificial Intelligence</a></li>
+            <li><a href="projects.html">Full Stack Engineering</a></li>
+            <li><a href="blog.html">Entertainment &amp; Media</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-envelope"></i> anish02210156z@gmail.com</li>
+            <li><i class="fas fa-globe"></i> anishyadav.com.np</li>
+            <li><i class="fas fa-map-marker-alt"></i> Nepal</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Anish Yadav. All rights reserved.</div>
+        <div>Designed &amp; Built with Pure HTML, CSS, and Vanilla JavaScript.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-container">
+      <div class="search-input-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="search-input" placeholder="Search projects, articles, or topics..." />
+        <button id="search-close" style="background: none; border: none; color: var(--text-main); font-size: 1.2rem; cursor: pointer;"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="search-results" id="search-results">
+        <p style="color: var(--text-muted); text-align: center;">Type to search across projects, articles, and pages...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back To Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

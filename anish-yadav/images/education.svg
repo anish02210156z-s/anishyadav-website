@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" rx="20" fill="#0F172A" />
+  <path d="M 300 120 L 480 200 L 300 280 L 120 200 Z" fill="none" stroke="#3B82F6" stroke-width="12" stroke-linejoin="round" />
+  <path d="M 200 240 L 200 310 C 200 330, 400 330, 400 310 L 400 240" fill="none" stroke="#06B6D4" stroke-width="10" stroke-linecap="round" />
+  <text x="300" y="360" font-family="sans-serif" font-weight="bold" font-size="24" fill="#F8FAFC" text-anchor="middle">EDUCATION &amp; LEARNING</text>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "name": "Anish Yadav - Personal Brand",
+  "short_name": "AnishYadav",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#2563EB",
+  "description": "Education, Technology, AI, Programming, Blogging, and Entertainment by Anish Yadav.",
+  "icons": [
+    {
+      "src": "/images/logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
